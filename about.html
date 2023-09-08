@@ -1,8 +1,28 @@
 <!DOCTYPE html> <!--changes html version-->
 <html>
+    <head>
+        <!--external styling-->
+        <link rel="stylesheet" href="css/styles.css">
+        <!--internal styling: only applicable to one page-->
+        <style> 
+            p { 
+                color: hotpink;
+                font-size: 40px;
+                padding: 40px;
+            }
+        </style>
+        <!-- 
+            CSS Precedence
+            1. inline
+            2. internal
+            3. external
+        -->
+    </head>
     <body>
-        <p>I am Ethan, I am 27 years old.</p>
-
+        <p style="background-color:red;">I am Ethan, I am 27 years old.</p> <!--inline styling-->
+        <p style="color:brown;">hello1!</p>
+        <p>hello2!</p>
+        <p>hello3!</p>
         <a href="blogs/food.html">Food</a>
         <br/>
         <a href="index.html">Go Home</a>
