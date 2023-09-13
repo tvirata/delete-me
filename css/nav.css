@@ -1,0 +1,28 @@
+ul { 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background: #333;
+    overflow: hidden; /* dont show excess */
+}
+
+li { 
+    float: left; /* float everything to left side */
+    border-right: 1px solid #bbb;
+}
+
+li:last-child { 
+    border-right: none;
+}
+
+li a { 
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px; /*=padding-left, padding-right, padding-top, padding-bottom*/
+}
+
+li a.active { 
+    background-color: green;
+}

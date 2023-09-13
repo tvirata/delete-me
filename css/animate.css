@@ -1,0 +1,51 @@
+div { 
+    width: 200px;
+    height: 200px;
+    background: red;
+    transition: width 2s, background 6s; /* transition: property duration; */
+    /*transition-delay: 3s;*/ /* interaction delay */
+}
+
+div p { 
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font: 20px bold; /* = font-size: 20px;
+                          font-weight: bold; */
+}
+
+div:hover { /* div:pseudo-element */
+    width: 400px;
+    background: #e304bb;
+}
+
+div.happy { 
+    margin-top: 20px;
+    background: green;
+    transform: translate(50px, 100px) /* box is still in original place, just transformed */
+    rotate(20deg) scale(2.0, 2.0);
+}
+div.happy:hover { 
+    transform: rotateZ(90deg);
+}
+@keyframes example {
+    from {
+        background-color: red
+    }
+    to { 
+        background-color: hotpink;
+    }
+}
+.gap { 
+    background: yellow;
+    height: 2000px;
+    animation: example 4s; /*  = animation-name: example;
+                                 animation-duration: 4s; */
+}
+div.header { /* can omit div. if it is unqiue class element*/
+    background: blue;
+    width: 100%;
+    height: 50px;
+    position: sticky;
+    top: 0; /* works for aboslute and sticky positions and relative */
+    left: 60px;
+}
