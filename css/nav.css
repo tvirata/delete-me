@@ -1,28 +1,71 @@
-ul { 
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background: #333;
-    overflow: hidden; /* dont show excess */
+/* body { 
+    background: dodgerblue;
+} */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background: #333;
+  overflow: hidden; /* dont show excess */
 }
 
-li { 
-    float: left; /* float everything to left side */
-    border-right: 1px solid #bbb;
+li {
+  float: left; /* float everything to left side */
+  border-right: 1px solid #bbb;
 }
 
-li:last-child { 
-    border-right: none;
+li:last-child {
+  border-right: none;
 }
 
-li a { 
-    display: block;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    padding: 15px; /*=padding-left, padding-right, padding-top, padding-bottom*/
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 15px; /*=padding-left, padding-right, padding-top, padding-bottom*/
 }
 
-li a.active { 
-    background-color: green;
+li a.active {
+  background-color: green;
+}
+/* 
+    3 sizes to consider: 767px (tablet) <480px(mobile) 991 (desktop)
+*/
+/* changes background color at certain screen widths */
+/* @media screen and (min-width:400px) { 
+    body { 
+        background: red;
+    }
+}
+@media screen and (min-width:800px) { 
+    body { 
+        background: purple;
+    }
+} */
+
+/*flexbox*/
+.container {
+  display: flex; /*changes to row by default*/
+  background: dodgerblue;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* justify-content: space-between; no padding, space-around margin around element
+    flex-direction: column; changes direction */
+}
+
+.container div {
+  background: lightgray;
+  width: 100px;
+  margin: 100px;
+  text-align: center;
+  height: 50px;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
 }

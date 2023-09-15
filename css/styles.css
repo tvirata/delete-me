@@ -1,39 +1,61 @@
-p { 
-    color: purple !important; /* !important overrides everything, do not use it, bad practice */
-    font-size: 30px;
-    border: 5px dashed green;
+p {
+  color: purple !important; /* !important overrides everything, do not use it, bad practice */
+  font-size: 30px;
+  border: 5px dashed green;
 }
-.happy, li { 
-    background: hotpink;
+.happy,
+li {
+  background: hotpink;
 }
-li { 
-    color: white;
+li {
+  color: white;
 }
-img { 
-    width: 200px;
+img {
+  width: 200px;
 }
-#doggy { 
-    width: 100px;
+#doggy {
+  width: 100px;
 }
-img.doggo { /*applicable to img with class doggo*/
-    width: 50px;
-    background-color: red;
-    height: 200px;
-    width: 10px;
+img.doggo {
+  /*applicable to img with class doggo*/
+  width: 50px;
+  background-color: red;
+  height: 200px;
+  width: 10px;
 }
 
-table { 
-    border: 2px solid black;
+table {
+  border: 2px solid black;
 }
 th:nth-child(odd),
-td:nth-child(odd){ 
-    background:green;
+td:nth-child(odd) {
+  background: green;
 }
 th:nth-child(even),
-tr:nth-child(even){ 
-    background: red;
+tr:nth-child(even) {
+  background: red;
 }
-td, th { 
-    border: 1px solid black;
-    padding: 5px;
+td,
+th {
+  border: 1px solid black;
+  padding: 5px;
 }
+
+/*css*/ /*
+nav ul {
+}
+nav li {
+}
+nav a {
+} 
+*/
+/* scss:must be compiled first */ /*
+nav {
+  ul {
+  }
+  li {
+  }
+  a {
+  }
+}
+*/
