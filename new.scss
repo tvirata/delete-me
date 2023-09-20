@@ -1,0 +1,39 @@
+$new-color: pink;
+
+@mixin new($theme: darkgray) {
+  background: $theme;
+  box-shadow: 0 0 1px rgb(169, 169, 169, 0.25);
+  color: #fff;
+}
+.info {
+  @include new;
+}
+.alert {
+  @include new($theme: darkred);
+}
+.info {
+  @include new($theme: darkgreen);
+}
+
+nav {
+  background: $new-color;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    background: $new-color;
+    list-style: none;
+
+    li {
+      background: $new-color;
+      display: inline-block;
+
+      a {
+        background: $new-color;
+        display: block;
+        padding: 6px 12px;
+        text-decoration: none;
+      }
+    }
+  }
+}

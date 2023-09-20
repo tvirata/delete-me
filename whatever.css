@@ -1,0 +1,39 @@
+.info {
+  background: darkgray;
+  box-shadow: 0 0 1px rgba(169, 169, 169, 0.25);
+  color: #fff;
+}
+
+.alert {
+  background: darkred;
+  box-shadow: 0 0 1px rgba(169, 169, 169, 0.25);
+  color: #fff;
+}
+
+.info {
+  background: darkgreen;
+  box-shadow: 0 0 1px rgba(169, 169, 169, 0.25);
+  color: #fff;
+}
+
+nav {
+  background: pink;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  background: pink;
+  list-style: none;
+}
+nav ul li {
+  background: pink;
+  display: inline-block;
+}
+nav ul li a {
+  background: pink;
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=whatever.css.map */
